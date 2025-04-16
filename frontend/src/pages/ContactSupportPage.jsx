@@ -86,7 +86,7 @@ const ContactSupportPage = () => {
                   <div>
                     <p className="font-semibold text-base-content">Email Support</p>
                     <a
-                      href="mailto:ngobokaben@gmail.com"
+                      href="http://mailto:google@gmail.com"
                       className="text-sm text-primary hover:underline"
                     >
                       ngobokaben@gmail.com
