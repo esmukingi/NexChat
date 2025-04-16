@@ -3,7 +3,10 @@ import { axiosInstance } from "../lib/axios.js";
 import toast from "react-hot-toast";
 import {io} from 'socket.io-client'
 
-const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5000" : "/";
+const BASE_URL = import.meta.env.MODE === "development"
+  ? "http://localhost:5000"
+  : "https://560a-2c0f-fe30-4406-0-88d-1557-daa1-44e7.ngrok-free.app";
+
 
 export const useAuthStore = create((set, get) => ({
   authUser: null,

@@ -1,8 +1,6 @@
 // useContactStore.js
 import { create } from 'zustand';
 import { axiosInstance } from '../lib/axios';
-import toast from 'react-hot-toast';
-
 const useContactStore = create((set, get) => ({
   formData: {
     name: '',
@@ -35,7 +33,6 @@ const useContactStore = create((set, get) => ({
       }
     } catch (error) {
       console.error('Form submission failed:', error);
-      toast.error('Contact submision failed')
       set({ formStatus: 'error' });
     } finally {
       setTimeout(() => set({ formStatus: null }), 3000);
